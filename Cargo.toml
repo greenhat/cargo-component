@@ -112,8 +112,11 @@ wasmparser = "0.225.0"
 wasmprinter = "0.225.0"
 wat = "1.220.0"
 which = "6.0.1"
-wit-bindgen-core = "0.39.0"
-wit-bindgen-rust = "0.39.0"
+# wit-bindgen-core = "0.39.0"
+# wit-bindgen-rust = "0.39.0"
+wit-bindgen-core = { version = "0.39.0", git = "https://github.com/greenhat/wit-bindgen.git", rev = "613d2fd95f360e554613d435e74c1c52b85617bf" }
+wit-bindgen-rust = { version = "0.39.0", git = "https://github.com/greenhat/wit-bindgen.git", rev = "613d2fd95f360e554613d435e74c1c52b85617bf" }
+#
 wit-component = "0.225.0"
 wit-parser = "0.225.0"
 
