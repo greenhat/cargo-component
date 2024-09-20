@@ -4748,8 +4748,7 @@ dependencies = [
 [[package]]
 name = "wit-bindgen-core"
 version = "0.31.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "175a2edcf18d1efd1412cb560b895dd09903f4fe73c3a597fbb0075ad86a03e8"
+source = "git+https://github.com/greenhat/wit-bindgen.git?branch=with-type-remapping-draft#a30d8710e4d077eb9ac965efc38949a93e293b1b"
 dependencies = [
  "anyhow",
  "heck 0.5.0",
@@ -4759,8 +4758,7 @@ dependencies = [
 [[package]]
 name = "wit-bindgen-rust"
 version = "0.31.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5a1c119b99edc4fc44ebfd3c461337b18f9db35388358344750b4fcfc788986b"
+source = "git+https://github.com/greenhat/wit-bindgen.git?branch=with-type-remapping-draft#a30d8710e4d077eb9ac965efc38949a93e293b1b"
 dependencies = [
  "anyhow",
  "heck 0.5.0",
