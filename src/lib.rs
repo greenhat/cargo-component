@@ -145,6 +145,7 @@ pub async fn run_cargo_command(
     subcommand: Option<&str>,
     cargo_args: &CargoArguments,
     spawn_args: &[String],
+    env_vars: &HashMap<String, String>,
 ) -> Result<Vec<PathBuf>> {
     let import_name_map = generate_bindings(client, config, metadata, packages, cargo_args).await?;
 
@@ -181,6 +182,7 @@ pub async fn run_cargo_command(
     );
 
     let mut cargo = Command::new(&cargo_path);
+    cargo.envs(env_vars);
     if matches!(command, CargoCommand::Run | CargoCommand::Serve) {
         // Treat run and serve as build commands as we need to componentize the output
         cargo.arg("build");

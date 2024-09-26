@@ -113,7 +113,9 @@ wasmprinter = "0.216.0"
 wat = "1.216.0"
 which = "6.0.1"
 wit-bindgen-core = { version = "0.31.0", git = "https://github.com/greenhat/wit-bindgen.git", branch = "with-type-remapping-draft" }
+# wit-bindgen-core = { version = "0.31.0", path = "../wit-bindgen/crates/core" }
 wit-bindgen-rust = { version = "0.31.0", git = "https://github.com/greenhat/wit-bindgen.git", branch = "with-type-remapping-draft" }
+# wit-bindgen-rust = { version = "0.31.0", path = "../wit-bindgen/crates/rust" }
 wit-component = "0.216.0"
 wit-parser = "0.216.0"
 

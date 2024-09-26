@@ -1,4 +1,4 @@
-use std::path::PathBuf;
+use std::{collections::HashMap, path::PathBuf};
 
 use anyhow::{bail, Result};
 use cargo_component::{
@@ -190,6 +190,7 @@ async fn main() -> Result<()> {
                 subcommand.as_deref(),
                 &cargo_args,
                 &spawn_args,
+                &HashMap::new(),
             )
             .await
             {

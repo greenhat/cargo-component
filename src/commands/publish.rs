@@ -1,4 +1,4 @@
-use std::{path::PathBuf, sync::Arc};
+use std::{collections::HashMap, path::PathBuf, sync::Arc};
 
 use anyhow::{bail, Context, Result};
 use cargo_component_core::command::CommonOptions;
@@ -162,6 +162,7 @@ impl PublishCommand {
             Some("build"),
             &cargo_build_args,
             &spawn_args,
+            &HashMap::new(),
         )
         .await?;
         if outputs.len() != 1 {
